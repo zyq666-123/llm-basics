@@ -2,12 +2,10 @@ import os
 import json
 from dotenv import load_dotenv
 from openai import OpenAI
+from common import MODEL,client
 
 load_dotenv()
-client =OpenAI(
-    api_key=os.getenv("DEEPSEEK_API_KEY"),
-    base_url ="https://api.deepseek.com",
-)
+
 MODEL ="deepseek-flash"
 def ask(question,system_prompt):
     messages =[]

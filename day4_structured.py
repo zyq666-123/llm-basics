@@ -1,13 +1,11 @@
 import os
 import json
 from dotenv import load_dotenv
+from common import MODEL, client
 from openai import OpenAI
 
 load_dotenv()
-client =OpenAI(
-    api_key =os.getenv("DEEPSEEK_API_KEY"),
-    base_url ="https://api.deepseek.com",
-)
+
 MODEL ="deepseek-flash"
 SYSTEM ="""你是一个简历信息抽取助手。
 请从用户给出的文本中抽取信息，以json格式输出。

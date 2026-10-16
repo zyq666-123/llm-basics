@@ -1,14 +1,11 @@
 import os
+from common import MODEL, client
 
 from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv()
 
-client = OpenAI(
-    api_key=os.getenv("DEEPSEEK_API_KEY"),
-    base_url="https://api.deepseek.com",
-)
 
 MODEL = "deepseek-flash"
 USD_TO_CNY = 7.2

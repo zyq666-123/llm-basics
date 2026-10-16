@@ -1,11 +1,3 @@
-https://api.deepseek.com/chat/cpmpletions
-POST
-Authorization:Bear 你的Deepseek API密钥
-"message":[
-  {"content":"you are a helpful assistant",
-   "role":"system"},
-  {"content":"Hi",
-   "role":"user"}
-
-]
-"model":"deepseek-flash"
+结论一:缓存命中比未命中便宜50倍
+结论二：输出比输入贵4倍
+结论三：错峰价格是高峰的一半

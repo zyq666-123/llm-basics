@@ -1,0 +1,388 @@
+{
+  "name": "day10_self_consistency",
+  "created_at": "2026-10-19T11:39:57.324516",
+  "config": {
+    "thinking": "disabled",
+    "temperature": 1.0,
+    "n_samples": 5
+  },
+  "summary": {
+    "accuracy_first": 1.0,
+    "accuracy_voted": 1.0,
+    "accuracy_oracle": 1.0,
+    "per_sample_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "ties": 0,
+    "single_cost": 0.0006899999999999997,
+    "total_cost": 0.0034499999999999986,
+    "rescued": [],
+    "broken": []
+  },
+  "rows": [
+    {
+      "i": 1,
+      "question": "小明有 5 个苹果，妈妈又给了他 3 个，他一共吃了 2 个，还剩几个？",
+      "expected": 6,
+      "samples": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0
+      ],
+      "voted": 6.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 2,
+      "question": "一箱牛奶 12 盒，买了 3 箱，喝了 7 盒，还剩几盒？",
+      "expected": 29,
+      "samples": [
+        29.0,
+        29.0,
+        29.0,
+        29.0,
+        29.0
+      ],
+      "voted": 29.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 3,
+      "question": "甲有 45 元，乙比甲多 15 元，两人一共多少钱？",
+      "expected": 105,
+      "samples": [
+        105.0,
+        105.0,
+        105.0,
+        105.0,
+        105.0
+      ],
+      "voted": 105.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 4,
+      "question": "一个长方形长 12 厘米宽 8 厘米，周长是多少厘米？",
+      "expected": 40,
+      "samples": [
+        40.0,
+        40.0,
+        40.0,
+        40.0,
+        40.0
+      ],
+      "voted": 40.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 5,
+      "question": "班里有 40 人，男生占 3/5，女生有多少人？",
+      "expected": 16,
+      "samples": [
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0
+      ],
+      "voted": 16.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 6,
+      "question": "图书馆有 240 本书，借出 1/4，又新买 30 本，现在有多少本？",
+      "expected": 210,
+      "samples": [
+        210.0,
+        210.0,
+        210.0,
+        210.0,
+        210.0
+      ],
+      "voted": 210.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 7,
+      "question": "汽车每小时行 60 公里，行驶 2.5 小时，能走多远？",
+      "expected": 150,
+      "samples": [
+        150.0,
+        150.0,
+        150.0,
+        150.0,
+        150.0
+      ],
+      "voted": 150.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 8,
+      "question": "一件衣服原价 200 元，打八折后再减 20 元，实付多少元？",
+      "expected": 140,
+      "samples": [
+        140.0,
+        140.0,
+        140.0,
+        140.0,
+        140.0
+      ],
+      "voted": 140.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 9,
+      "question": "水池有 500 升水，每小时流出 45 升，3 小时后还剩多少升？",
+      "expected": 365,
+      "samples": [
+        365.0,
+        365.0,
+        365.0,
+        365.0,
+        365.0
+      ],
+      "voted": 365.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 10,
+      "question": "苹果 6 元一斤，买了 2.5 斤，付 20 元，找零多少元？",
+      "expected": 5,
+      "samples": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "voted": 5.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 11,
+      "question": "三本书共 156 页，第一本 48 页，第二本比第一本多 12 页，第三本多少页？",
+      "expected": 48,
+      "samples": [
+        48.0,
+        48.0,
+        48.0,
+        48.0,
+        48.0
+      ],
+      "voted": 48.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 12,
+      "question": "每盒铅笔 12 支，45 支能装满几盒，还剩几支？（填剩余支数）",
+      "expected": 9,
+      "samples": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0
+      ],
+      "voted": 9.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 13,
+      "question": "一个数加上 27 后乘 3 等于 108，这个数是多少？",
+      "expected": 9,
+      "samples": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.0
+      ],
+      "voted": 9.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 14,
+      "question": "小明跑步速度 200 米/分，跑 3 公里需要多少分钟？",
+      "expected": 15,
+      "samples": [
+        15.0,
+        15.0,
+        15.0,
+        15.0,
+        15.0
+      ],
+      "voted": 15.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 15,
+      "question": "商店进货 80 件，卖出 3/5 后又进货 25 件，现在多少件？",
+      "expected": 57,
+      "samples": [
+        57.0,
+        57.0,
+        57.0,
+        57.0,
+        57.0
+      ],
+      "voted": 57.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 16,
+      "question": "一根绳子长 8 米，剪成每段 2/5 米，能剪几段？",
+      "expected": 20,
+      "samples": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "voted": 20.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 17,
+      "question": "一列火车 8:15 出发，行驶 3 小时 40 分，几点到？（填分钟数，如 11:55 填 55）",
+      "expected": 55,
+      "samples": [
+        55.0,
+        55.0,
+        55.0,
+        55.0,
+        55.0
+      ],
+      "voted": 55.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 18,
+      "question": "一块地 3/4 公顷种白菜，剩下的 1/2 种萝卜，萝卜种了多少公顷？（填分子，即 1/8 填 1）",
+      "expected": 1,
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "voted": 1.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 19,
+      "question": "用 24 厘米长的铁丝围成一个正方形，面积是多少平方厘米？",
+      "expected": 36,
+      "samples": [
+        36.0,
+        36.0,
+        36.0,
+        36.0,
+        36.0
+      ],
+      "voted": 36.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    },
+    {
+      "i": 20,
+      "question": "5 个人 3 天完成一项工作，如果 3 个人做同样效率，需要几天？",
+      "expected": 5,
+      "samples": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "voted": 5.0,
+      "votes": 5,
+      "tie": false,
+      "first_ok": true,
+      "voted_ok": true,
+      "oracle_ok": true
+    }
+  ]
+}
